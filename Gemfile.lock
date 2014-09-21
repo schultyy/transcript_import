@@ -1,0 +1,44 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.3.6)
+    axiom-types (0.1.1)
+      descendants_tracker (~> 0.0.4)
+      ice_nine (~> 0.11.0)
+      thread_safe (~> 0.3, >= 0.3.1)
+    coercible (1.0.0)
+      descendants_tracker (~> 0.0.1)
+    descendants_tracker (0.0.4)
+      thread_safe (~> 0.3, >= 0.3.1)
+    equalizer (0.0.9)
+    eson (0.8.0)
+      eson-core (= 0.8.0)
+      eson-dsl (= 0.8.0)
+      eson-http (= 0.8.0)
+    eson-core (0.8.0)
+      multi_json
+    eson-dsl (0.8.0)
+    eson-http (0.8.0)
+      addressable
+      eson-core
+      faraday (~> 0.8.0)
+      net-http-persistent
+    faraday (0.8.9)
+      multipart-post (~> 1.2.0)
+    ice_nine (0.11.0)
+    multi_json (1.10.1)
+    multipart-post (1.2.0)
+    net-http-persistent (2.9.4)
+    thread_safe (0.3.4)
+    virtus (1.0.3)
+      axiom-types (~> 0.1)
+      coercible (~> 1.0)
+      descendants_tracker (~> 0.0, >= 0.0.3)
+      equalizer (~> 0.0, >= 0.0.9)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  eson
+  virtus
