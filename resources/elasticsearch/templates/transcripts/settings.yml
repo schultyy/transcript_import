@@ -1,0 +1,9 @@
+---
+index:
+  analysis:
+    analyzer:
+      talk_analyzer:
+        filter:
+          - standard
+          - lowercase
+        tokenizer: standard
