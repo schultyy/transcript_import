@@ -6,7 +6,7 @@ EXCLUDE = ['.', '..', '.git', '.gitignore', 'script', 'README.md']
 INDEX = 'transcripts'
 
 def read_file(file)
-  content = File.read(file)
+  content = File.read(file, :encoding => 'utf-8').force_encoding('iso-8859-1').encode('utf-8')
   if content.include?('---')
     content.split('---').reject(&:empty?)
   else
