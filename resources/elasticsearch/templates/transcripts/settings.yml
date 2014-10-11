@@ -6,4 +6,11 @@ index:
         filter:
           - standard
           - lowercase
+          - shingled
         tokenizer: standard
+    filter:
+      shingled:
+        type: shingle
+        min_shingle_size: 2
+        max_shingle_size: 3
+
