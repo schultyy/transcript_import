@@ -1,6 +1,20 @@
+GIT
+  remote: git@github.com:Asquera/elasticsearch-rake-tasks.git
+  revision: e2c788e785358e7fbc0809a9c56214d69dccb6a6
+  specs:
+    elasticsearch-rake-tasks (0.0.1)
+      activesupport (~> 3.2.0)
+      eson
+      eson-more
+      faraday
+      psych-inherit-file (~> 1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
+    activesupport (3.2.19)
+      i18n (~> 0.6, >= 0.6.4)
+      multi_json (~> 1.0)
     addressable (2.3.6)
     axiom-types (0.1.1)
       descendants_tracker (~> 0.0.4)
@@ -23,12 +37,17 @@ GEM
       eson-core
       faraday (~> 0.8.0)
       net-http-persistent
+    eson-more (0.8.0)
+      eson-core
     faraday (0.8.9)
       multipart-post (~> 1.2.0)
+    i18n (0.6.11)
     ice_nine (0.11.0)
     multi_json (1.10.1)
     multipart-post (1.2.0)
     net-http-persistent (2.9.4)
+    psych-inherit-file (1.0.0)
+    rake (10.3.2)
     thread_safe (0.3.4)
     virtus (1.0.3)
       axiom-types (~> 0.1)
@@ -40,5 +59,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  elasticsearch-rake-tasks!
   eson
+  rake
   virtus

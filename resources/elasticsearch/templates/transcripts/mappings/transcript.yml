@@ -1,0 +1,17 @@
+---
+properties:
+  text:
+    type: string
+    analyzer: talk_analyzer
+  title:
+    type: string
+    analyzer: talk_analyzer
+  speaker:
+    type: string
+    analyzer: talk_analyzer
+  id:
+    type: string
+    analyzer: talk_analyzer
+  teaser:
+    type: string
+    analyzer: talk_analyzer
