@@ -4,10 +4,11 @@ index:
     analyzer:
       talk_analyzer:
         filter:
-          - standard
+          - icu_normalizer
+          - icu_folding
           - lowercase
           - shingled
-        tokenizer: standard
+        tokenizer: icu_tokenizer
     filter:
       shingled:
         type: shingle
